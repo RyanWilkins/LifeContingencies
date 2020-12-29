@@ -1,0 +1,74 @@
+/* Question Panel Component CSS */
+
+@keyframes expandBox {
+    from {
+      height: 20%;
+    }
+    to {
+      height: 100%;
+    }
+  }
+  
+  @keyframes condenseBox {
+    from {
+      height: 20%;
+      opacity: 1;
+    }
+    to {
+      height: 0%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes adjustText {
+      from {
+          margin-bottom: 0%;
+      }
+      to {
+          margin-bottom: 70%;
+      }
+  }
+
+.questionTextBox {
+  //   text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex !important;
+  align-items: center;
+  // text-align: center;
+
+  & > .questionText {
+    width: 100%;
+    margin-bottom: 0%;
+  }
+}
+
+.questionBox {
+
+    font-size: 2em;
+
+  &.active {
+    animation-name: expandBox;
+    animation-duration: 2s;
+    height: 100%;
+
+    & > * > .questionTextBox > .questionText {
+        animation-name: adjustText;
+        animation-duration: 2s;
+        margin-bottom: 70%;
+    }
+
+  }
+
+  &.inactive {
+    animation-name: condenseBox;
+    animation-duration: 2s;
+    height: 0%;
+    opacity: 0;
+  }
+
+  &:not(.active):not(.inactive) {
+    height: 20%;
+  }
+}

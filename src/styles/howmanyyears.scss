@@ -1,0 +1,39 @@
+.inputGridItem{
+    height: 60vh;
+}
+
+.chartGridItem{
+    height: 60vh;
+}
+
+.resultsGridItem{
+    height: 25vh;
+}
+
+.mainGrid{
+    height: 100vh;
+}
+
+@media(max-width:960px){
+
+    .inputGridItem{
+        height: auto;
+    }
+    
+    .chartGridItem{
+        height: 40vh;
+    }
+    
+    .resultsGridItem{
+        height: auto;
+    }
+
+    .nextPageButton{
+        height: auto;
+    }
+
+    .mainGrid{
+        height: auto;
+    }
+
+}

@@ -1,0 +1,24 @@
+.questionTitle {
+    // font-size: 2em;
+    height: 100%;
+}
+
+.questionHeader{
+    height:15vh;
+}
+
+main{
+    height:100vh;
+}
+
+@media(max-width:960px){
+
+    .questionHeader{
+        height: auto;
+    }
+
+    main{
+        height:auto;
+    }
+
+}
