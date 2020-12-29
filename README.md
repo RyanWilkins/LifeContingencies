@@ -1,4 +1,4 @@
-!["Actuarial notation npx"](../master/public/logo192.png)
+!["Actuarial notation npx"](../publicbranch/public/logo192.png)
 # Life Contingencies in ReactJS
 
 Live Site: [www.LifeContingencies.com](https://www.lifecontingencies.com)
